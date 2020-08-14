@@ -1,0 +1,9 @@
+enclave {
+    from "Sealing/Sealing.edl" import *;
+
+    trusted {
+        /* define ECALLs here. */
+        public unsigned long ecall_access([in]int* sizeMb);
+        public void ecall_init();
+    };
+};
