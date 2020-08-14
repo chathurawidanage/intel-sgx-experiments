@@ -1,0 +1,8 @@
+enclave {
+    from "Sealing/Sealing.edl" import *;
+
+    trusted {
+        /* define ECALLs here. */
+        public void ecall_compute_fib([in]const int* term);
+    };
+};
